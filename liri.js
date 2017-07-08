@@ -52,7 +52,7 @@ function displayTweets() {
 
 function displaySpotify(input) {
     if (input == null) {
-        input = "goosebumps";
+        input = "The Sign";
     }
 
     spotify.search({ type: 'track', query: input }, function(err, data) {
@@ -72,7 +72,7 @@ function displaySpotify(input) {
 
 function displayMovie() {
     if (input == null) {
-        input = "Crash";
+        input = "Mr. Nobody";
     }
     var queryURL = "http://www.omdbapi.com/?apikey=40e9cece&t=" + input + "&y=&plot=short&r=json"
     request(queryURL, function(error, response, body) {
